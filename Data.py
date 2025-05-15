@@ -41,15 +41,35 @@ for line in f.readlines():
     elif re.search(r'Text = ', line):
         entry.append(value)
     elif re.search(r'^},$', line):
+        text = entry[-1]
+        cardTraits = []
+        debuffs = []
+        buffs = []
+        if re.search(r'Innate.', text): cardTraits.append("Innate")
+        if re.search(r'Exhaust.', text): cardTraits.append("Exhaust")
+        if re.search(r'Ethereal.', text): cardTraits.append("Ethereal")
+        if re.search(r'Unplayable.', text): cardTraits.append("Unplayable")
+        if re.search(r'Retain.', text): cardTraits.append("Retain")
+        # if re.search(r'Weaken', text): debuffs.append("Weaken")
+        # if re.search(r'Frail', text): debuffs.append("Frail")
+        # if re.search(r'Vulnerable', text): debuffs.append("Vulnerable")
+        # if re.search(r'Intangible', text): buffs.append("Intangible")
+        entry.append(cardTraits)
+        entry.append(debuffs)
+        entry.append(buffs)
         data.append(entry)
 f.close()
 
-# for x in data:
-#     print("Card:")
-#     for y in x:
-#         print(y)
+df = pd.DataFrame(data, columns=["Name", "Color", "Rarity", "Type", "Cost", "Text", "Card Traits", "Debuffs", "Buffs"])
 
-df = pd.DataFrame(data, columns=["Name", "Color", "Rarity", "Type", "Cost", "Text"])
+# Assign Card Traits
+
+
+# Assign Debuffs
+
+# Assign Buffs
+
+
 print(df)
-print(df.loc[df["Cost"] == "X"])
-
+# print(df["Name"].tolist())
+# print(df.loc[df["Cost"] == "X"]["Name"].tolist())
