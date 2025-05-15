@@ -6,6 +6,15 @@
 
 # Desired Card Information
 
+### Ver 0
+**id**: Unique identifier (arbitrarily labelled) <br>
+**Name**: About 300 unique card names <br>
+**Color**: Red, Green, Blue, Purple, Colorless <br>
+**Rarity**: Basic, Common, Uncommon, Rare, Curse <br>
+**Type**: Attack, Skill, Power, Status, Curse <br>
+**Cost**: 0, 1, 2, 3, 4, 5, X, Unplayable <br>
+**Text**: some random text <br>
+
 ### Ver 1
 **id**: Unique identifier (arbitrarily labelled) <br>
 **Name**: About 300 unique card names <br>

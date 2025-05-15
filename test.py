@@ -1,4 +1,3 @@
-f = open("CardTest.txt", 'r')
-for line in f.readlines():
-    print(line == "{\n")
-f.close()
+import pandas as pd
+df = pd.DataFrame(columns=["Name", "Color", "Rarity", "Type"])
+print(df)
