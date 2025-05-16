@@ -1,15 +1,16 @@
 # To do
 Short term:
 - Verify information in CardData (Ascenders Bane should have special rarity )
-- identify cards which 
-  - apply weak, frail, or vulnerable as debuffs
-  - give intangibility as a buff
-
-Long term:
 - identify cards which
   - give strength or dex as a buff
   - subtract strength or dex as a debuff
+- Create interactive script in terminal to play SlaytheSpirdle
+
+Long term:
 - Make additional entry for every single upgraded card 
+
+Problems:
+- There are multiple copies of strike and defend
 
 # Notes
 Cards which exhaust other cards: Havoc, True Grit, Burning Pact, Second Wind, Sever Soul, Corruption, Fire Fiend, Omniscience
