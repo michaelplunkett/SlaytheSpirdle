@@ -1,4 +1,4 @@
-          Apparition  Colorless    Special      Skill          1        ['Exhaust', 'Ethereal']                             []                             [] [#Ethereal.|\nGain 1 #Intangible. \n#Exhaust.
+          Apparition  Colorless    Special      Skill          1        ['Exhaust', 'Ethereal']                             []                 ['Intangible'] [#Ethereal.|\nGain 1 #Intangible. \n#Exhaust.
                 Beta  Colorless    Special      Skill          2                    ['Exhaust']                             []                             [] Shuffle an [[Omega]] into draw pile. \n#Exhaust.
                 Bite  Colorless    Special     Attack          1                             []                             []                             [] Deal [7|8] damage.\nHeal [2|3] HP.
             Expunger  Colorless    Special     Attack          1                             []                             []                             []    Deal [9|15] damage X times.
@@ -12,7 +12,7 @@
                Smite  Colorless    Special     Attack          1          ['Exhaust', 'Retain']                             []                             [] #Retain. Deal [12|16] damage. #Exhaust.
     Through Violence  Colorless    Special     Attack          0          ['Exhaust', 'Retain']                             []                             [] #Retain. Deal [20|30] damage. #Exhaust.
           Bandage Up  Colorless   Uncommon      Skill          0                    ['Exhaust']                             []                             []      Heal [4|6] HP.\n#Exhaust.
-               Blind  Colorless   Uncommon      Skill          0                             []                             []                             [] Apply 2 #Weak| to ALL enemies].
+               Blind  Colorless   Uncommon      Skill          0                             []                     ['Weaken']                             [] Apply 2 #Weak| to ALL enemies].
        Dark Shackles  Colorless   Uncommon      Skill          0                    ['Exhaust']                             []                             [] Enemy loses [9|15] #Strength this turn.\n#Exhaust.
          Deep Breath  Colorless   Uncommon      Skill          0                             []                             []                             [] Shuffle your discard pile into your draw pile.\nDraw [1|2] [card|cards].
            Discovery  Colorless   Uncommon      Skill          1                    ['Exhaust']                             []                             [] Choose 1 of 3 random cards to add into your hand. It costs 0 this turn. [\n#Exhaust.|
@@ -30,7 +30,7 @@
         Panic Button  Colorless   Uncommon      Skill          0                    ['Exhaust']                             []                             [] Gain [30|40] #Block. You cannot gain #Block from cards for 2 turns.\n#Exhaust.
               Purity  Colorless   Uncommon      Skill          0                    ['Exhaust']                             []                             [] #Exhaust up to [3|5] cards in your hand.\n#Exhaust.
         Swift Strike  Colorless   Uncommon     Attack          0                             []                             []                             []            Deal [7|10] damage.
-                Trip  Colorless   Uncommon      Skill          0                             []                             []                             [] Apply 2 #Vulnerable| to ALL enemies].
+                Trip  Colorless   Uncommon      Skill          0                             []                 ['Vulnerable']                             [] Apply 2 #Vulnerable| to ALL enemies].
           Apotheosis  Colorless       Rare      Skill          2                    ['Exhaust']                             []                             [] #Upgrade ALL your cards for the rest of combat.\n#Exhaust.
            Chrysalis  Colorless       Rare      Skill          2                    ['Exhaust']                             []                             [] Shuffle [3|5] random Skills into your draw pile. They cost 0 this combat.\n#Exhaust.
        Hand of Greed  Colorless       Rare     Attack          2                             []                             []                             [] Deal [20|25] damage.\nIf #Fatal, gain [20|25] Gold.
@@ -47,7 +47,7 @@
        Transmutation  Colorless       Rare      Skill          X                    ['Exhaust']                             []                             [] Add X random| #upgraded] Colorless cards into your hand. They cost 0 this turn.\n#Exhaust.
             Violence  Colorless       Rare      Skill          0                    ['Exhaust']                             []                             [] Put [3|4] random Attacks from your draw pile into your hand.\n#Exhaust.
               Defend      Green      Basic      Skill          1                             []                             []                             []             Gain [5|8] #Block.
-          Neutralize      Green      Basic     Attack          0                             []                             []                             [] Deal [3|4] damage.\nApply [1|2] #Weak.
+          Neutralize      Green      Basic     Attack          0                             []                     ['Weaken']                             [] Deal [3|4] damage.\nApply [1|2] #Weak.
               Strike      Green      Basic     Attack          1                             []                             []                             []             Deal [6|9] damage.
             Survivor      Green      Basic      Skill          1                             []                             []                             [] Gain [8|11] #Block.\nDiscard 1 card.
           Acrobatics      Green     Common      Skill          1                             []                             []                             [] Draw [3|4] cards.\nDiscard 1 card.
@@ -68,7 +68,7 @@
          Quick Slash      Green     Common     Attack          1                             []                             []                             [] Deal [8|12] damage.\nDraw 1 card.
                Slice      Green     Common     Attack          0                             []                             []                             []             Deal [6|9] damage.
        Sneaky Strike      Green     Common     Attack          2                             []                             []                             [] Deal [12|16] damage.\nIf you have discarded a card this turn,\ngain <G> <G>.
-        Sucker Punch      Green     Common     Attack          1                             []                             []                             [] Deal [7|9] damage.\nApply [1|2] #Weak.
+        Sucker Punch      Green     Common     Attack          1                             []                     ['Weaken']                             [] Deal [7|9] damage.\nApply [1|2] #Weak.
             Accuracy      Green   Uncommon      Power          1                             []                             []                             [] #Shivs deal [4|6] additional damage.
       All-Out Attack      Green   Uncommon     Attack          1                             []                             []                             [] Deal [10|14] damage to ALL enemies.\nDiscard 1 card at random.
             Backstab      Green   Uncommon     Attack          0          ['Innate', 'Exhaust']                             []                             [] #Innate.\nDeal [11|15] damage.\n#Exhaust.
@@ -79,7 +79,7 @@
             Catalyst      Green   Uncommon      Skill          1                    ['Exhaust']                             []                             [] [Double|Triple] the enemy\'s #Poison.\n#Exhaust.
                Choke      Green   Uncommon     Attack          2                             []                             []                             [] Deal 12 damage.\nWhenever you play a card this turn, the enemy loses [3|5] HP.
          Concentrate      Green   Uncommon      Skill          0                             []                             []                             [] Discard [3|2] cards.\nGain <G> <G>.
-     Crippling Cloud      Green   Uncommon      Skill          2                    ['Exhaust']                             []                             [] Apply [4|7] #Poison and 2 #Weak to ALL enemies.\n#Exhaust.
+     Crippling Cloud      Green   Uncommon      Skill          2                    ['Exhaust']                     ['Weaken']                             [] Apply [4|7] #Poison and 2 #Weak to ALL enemies.\n#Exhaust.
                 Dash      Green   Uncommon     Attack          2                             []                             []                             [] Gain [10|13] #Block.\nDeal [10|13] damage.
          Distraction      Green   Uncommon      Skill          1                    ['Exhaust']                             []                             [] Add a random Skill into your hand.\nIt costs 0 this turn.\n#Exhaust.
        Endless Agony      Green   Uncommon     Attack          0                    ['Exhaust']                             []                             [] Whenever you draw this card, add a copy of it into your hand.\nDeal [4|6] damage.\n#Exhaust.
@@ -91,7 +91,7 @@
             Footwork      Green   Uncommon      Power          1                             []                             []                             []         Gain [2|3] #Dexterity.
            Heel Hook      Green   Uncommon     Attack          1                             []                             []                             [] Deal [5|8] damage. \nIf the enemy has #Weak, \ngain <G> and \ndraw 1 card.
      Infinite Blades      Green   Uncommon      Power          1                     ['Innate']                             []                             [] |#Innate. ]At the start of your turn, add a #Shiv into your hand.
-           Leg Sweep      Green   Uncommon      Skill          2                             []                             []                             [] Apply [2|3] #Weak.\nGain [11|14] #Block.
+           Leg Sweep      Green   Uncommon      Skill          2                             []                     ['Weaken']                             [] Apply [2|3] #Weak.\nGain [11|14] #Block.
       Masterful Stab      Green   Uncommon     Attack          0                             []                             []                             [] Costs 1 additional <G>\nfor each time you lose HP this combat.\nDeal [12|16] damage.
        Noxious Fumes      Green   Uncommon      Power          1                             []                             []                             [] At the start of your turn, apply [2|3] #Poison to ALL enemies.
             Predator      Green   Uncommon     Attack          2                             []                             []                             [] Deal [15|20] damage.\nNext turn, draw 2 additional cards.
@@ -100,7 +100,7 @@
                Setup      Green   Uncommon      Skill          1                             []                             []                             [] Put a card from your hand on top of your draw pile.\nIt costs 0 until played.
               Skewer      Green   Uncommon     Attack          X                             []                             []                             []    Deal [7|10] damage X times.
            Tactician      Green   Uncommon      Skill Unplayable                 ['Unplayable']                             []                             [] #Unplayable.\nIf this card is discarded from your hand, gain <G>| <G>].
-              Terror      Green   Uncommon      Skill          1                    ['Exhaust']                             []                             [] Apply 99 #Vulnerable.\n#Exhaust.
+              Terror      Green   Uncommon      Skill          1                    ['Exhaust']                 ['Vulnerable']                             [] Apply 99 #Vulnerable.\n#Exhaust.
      Well-Laid Plans      Green   Uncommon      Power          1                     ['Retain']                             []                             [] At the end of your turn, #Retain up to [1|2] [card|cards].
      A Thousand Cuts      Green       Rare      Power          2                             []                             []                             [] Whenever you play a card, deal [1|2] damage to ALL enemies.
           Adrenaline      Green       Rare      Skill          0                    ['Exhaust']                             []                             [] Gain <G>| <G>].\nDraw 2 cards.\n#Exhaust.
@@ -114,14 +114,14 @@
              Envenom      Green       Rare      Power          2                             []                             []                             [] Whenever an Attack deals unblocked damage, apply 1 #Poison.
          Glass Knife      Green       Rare     Attack          1                             []                             []                             [] Deal [8|12] damage twice. Decrease the damage of this card by 2 this combat.
         Grand Finale      Green       Rare     Attack          0                             []                             []                             [] Can only be played if there are no cards in your draw pile.\nDeal [50|60] damage to ALL enemies.
-             Malaise      Green       Rare      Skill          X                    ['Exhaust']                             []                             [] Enemy loses [X|X+1] #Strength. Apply [X|X+1] #Weak.\n#Exhaust.
+             Malaise      Green       Rare      Skill          X                    ['Exhaust']                     ['Weaken']                             [] Enemy loses [X|X+1] #Strength. Apply [X|X+1] #Weak.\n#Exhaust.
            Nightmare      Green       Rare      Skill          3                    ['Exhaust']                             []                             [] Choose a card.\nNext turn, add 3 copies of that card into your hand. #Exhaust.
    Phantasmal Killer      Green       Rare      Skill          1                             []                             []                             [] Next turn, your Attacks deal double damage.
       Storm of Steel      Green       Rare      Skill          1                             []                             []                             [] Discard your hand.\nAdd 1 #Shiv|+] into your hand for each card discarded.
   Tools of the Trade      Green       Rare      Power          1                             []                             []                             [] At the start of your turn, draw 1 card and discard 1 card.
               Unload      Green       Rare     Attack          1                             []                             []                             [] Deal [14|18] damage.\nDiscard all non-Attack cards in your hand.
-         Wraith Form      Green       Rare      Power          3                             []                             []                             [] Gain [2|3] #Intangible.\nAt the end of your turn, lose 1 #Dexterity.
-                Bash        Red      Basic     Attack          2                             []                             []                             [] Deal [8|10] damage.\nApply [2|3] #Vulnerable.
+         Wraith Form      Green       Rare      Power          3                             []                             []                 ['Intangible'] Gain [2|3] #Intangible.\nAt the end of your turn, lose 1 #Dexterity.
+                Bash        Red      Basic     Attack          2                             []                 ['Vulnerable']                             [] Deal [8|10] damage.\nApply [2|3] #Vulnerable.
               Defend        Red      Basic      Skill          1                             []                             []                             []             Gain [5|8] #Block.
               Strike        Red      Basic     Attack          1                             []                             []                             []             Deal [6|9] damage.
                Anger        Red     Common     Attack          0                             []                             []                             [] Deal [6|8] damage.\nAdd a copy of this card into your discard pile.
@@ -129,7 +129,7 @@
            Body Slam        Red     Common     Attack          1                             []                             []                             [] Deal damage equal to your #Block.
                Clash        Red     Common     Attack          0                             []                             []                             [] Can only be played if every card in your hand is an Attack.\nDeal [14|18] damage.
               Cleave        Red     Common     Attack          1                             []                             []                             [] Deal [8|11] damage to ALL enemies.
-         Clothesline        Red     Common     Attack          2                             []                             []                             [] Deal [12|14] damage.\nApply [2|3] #Weak.
+         Clothesline        Red     Common     Attack          2                             []                     ['Weaken']                             [] Deal [12|14] damage.\nApply [2|3] #Weak.
                 Flex        Red     Common      Skill          0                             []                             []                             [] Gain [2|4] #Strength.\nAt the end of this turn, lose [2|4] #Strength.
                Havoc        Red     Common      Skill          1                    ['Exhaust']                             []                             [] Play the top card of your draw pile and #Exhaust it.
             Headbutt        Red     Common     Attack          1                             []                             []                             [] Deal [9|12] damage.\nPut a card from your discard pile on top of your draw pile.
@@ -139,7 +139,7 @@
        Pommel Strike        Red     Common     Attack          1                             []                             []                             [] Deal [9|10] damage.\nDraw [1|2] [card|cards].
         Shrug It Off        Red     Common      Skill          1                             []                             []                             [] Gain [8|11] #Block.\nDraw 1 card.
      Sword Boomerang        Red     Common     Attack          1                             []                             []                             [] Deal 3 damage to a random enemy [3|4] times.
-         Thunderclap        Red     Common     Attack          1                             []                             []                             [] Deal [4|7] damage and apply 1 #Vulnerable to ALL enemies.
+         Thunderclap        Red     Common     Attack          1                             []                 ['Vulnerable']                             [] Deal [4|7] damage and apply 1 #Vulnerable to ALL enemies.
            True Grit        Red     Common      Skill          1                    ['Exhaust']                             []                             [] Gain [7|9] #Block.\n#Exhaust a [random|] card in your hand.
          Twin Strike        Red     Common     Attack          1                             []                             []                             []       Deal [5|7] damage twice.
               Warcry        Red     Common      Skill          0                    ['Exhaust']                             []                             [] Draw [1|2] [card|cards].\nPut a card from your hand onto the top of your draw pile.\n#Exhaust.
@@ -163,7 +163,7 @@
          Hemokinesis        Red   Uncommon     Attack          1                             []                             []                             [] Lose 2 HP.\nDeal [15|20] damage.
       Infernal Blade        Red   Uncommon      Skill          1                    ['Exhaust']                             []                             [] Add a random Attack into your hand.\nIt costs 0 this turn.\n#Exhaust.
              Inflame        Red   Uncommon      Power          1                             []                             []                             []          Gain [2|3] #Strength.
-          Intimidate        Red   Uncommon      Skill          0                    ['Exhaust']                             []                             [] Apply [1|2] #Weak to ALL enemies.\n#Exhaust.
+          Intimidate        Red   Uncommon      Skill          0                    ['Exhaust']                     ['Weaken']                             [] Apply [1|2] #Weak to ALL enemies.\n#Exhaust.
          Metallicize        Red   Uncommon      Power          1                             []                             []                             [] At the end of your turn, gain [3|4] #Block.
        Power Through        Red   Uncommon      Skill          1                             []                             []                             [] Add 2 #Wounds into your hand.\nGain [15|20] #Block.
               Pummel        Red   Uncommon     Attack          1                    ['Exhaust']                             []                             [] Deal 2 damage [4|5] times.\n#Exhaust.
@@ -176,12 +176,12 @@
           Seeing Red        Red   Uncommon      Skill          1                    ['Exhaust']                             []                             []       Gain <R> <R>.\n#Exhaust.
             Sentinel        Red   Uncommon      Skill          1                    ['Exhaust']                             []                             [] Gain [5|8] #Block.\nIf this card is #Exhausted,\ngain <R> <R>| <R>].
           Sever Soul        Red   Uncommon     Attack          2                    ['Exhaust']                             []                             [] #Exhaust all non-Attack cards in your hand.\nDeal [16|22] damage.
-           Shockwave        Red   Uncommon      Skill          2                    ['Exhaust']                             []                             [] Apply [3|5] #Weak and #Vulnerable to ALL enemies.\n#Exhaust.
+           Shockwave        Red   Uncommon      Skill          2                    ['Exhaust']       ['Weaken', 'Vulnerable']                             [] Apply [3|5] #Weak and #Vulnerable to ALL enemies.\n#Exhaust.
        Spot Weakness        Red   Uncommon      Skill          1                             []                             []                             [] If the enemy intends to attack, gain [3|4] #Strength.
-            Uppercut        Red   Uncommon     Attack          2                             []                             []                             [] Deal 13 damage.\nApply [1|2] #Weak.\nApply [1|2] #Vulnerable.
+            Uppercut        Red   Uncommon     Attack          2                             []       ['Weaken', 'Vulnerable']                             [] Deal 13 damage.\nApply [1|2] #Weak.\nApply [1|2] #Vulnerable.
            Whirlwind        Red   Uncommon     Attack          X                             []                             []                             [] Deal [5|8] damage to ALL enemies X times.
            Barricade        Red       Rare      Power          3                             []                             []                             [] #Block is not removed at the start of your turn.
-             Berserk        Red       Rare      Power          0                             []                             []                             [] Gain [2|1] #Vulnerable.\nAt the start of your turn, gain <R>.
+             Berserk        Red       Rare      Power          0                             []                 ['Vulnerable']                             [] Gain [2|1] #Vulnerable.\nAt the start of your turn, gain <R>.
             Bludgeon        Red       Rare     Attack          3                             []                             []                             []           Deal [32|42] damage.
            Brutality        Red       Rare      Power          0                     ['Innate']                             []                             [] |#Innate.] \nAt the start of your turn, lose 1 HP and draw 1 card.
           Corruption        Red       Rare      Power          3                    ['Exhaust']                             []                             [] Skills cost 0.\nWhenever you play a Skill, #Exhaust it.
@@ -199,7 +199,7 @@
               Clumsy      Curse      Curse      Curse Unplayable     ['Ethereal', 'Unplayable']                             []                             []       #Unplayable.\n#Ethereal.
    Curse of the Bell      Curse      Curse      Curse Unplayable                 ['Unplayable']                             []                             [] #Unplayable. Cannot be removed from your deck.
                Decay      Curse      Curse      Curse Unplayable                 ['Unplayable']                             []                             [] #Unplayable.\nAt the end of your turn, take 2 damage.
-               Doubt      Curse      Curse      Curse Unplayable                 ['Unplayable']                             []                             [] #Unplayable.\nAt the end of your turn, gain 1 #Weak.
+               Doubt      Curse      Curse      Curse Unplayable                 ['Unplayable']                     ['Weaken']                             [] #Unplayable.\nAt the end of your turn, gain 1 #Weak.
               Injury      Curse      Curse      Curse Unplayable                 ['Unplayable']                             []                             []                   #Unplayable.
       Necronomicurse      Curse      Curse      Curse Unplayable                 ['Unplayable']                             []                             [] #Unplayable.\nThere is no escape from this curse.
            Normality      Curse      Curse      Curse Unplayable                 ['Unplayable']                             []                             [] #Unplayable.\nYou cannot play more than 3 cards this turn.
@@ -221,13 +221,13 @@
                  Zap       Blue      Basic      Skill          1                             []                             []                             []         #Channel 1 #Lightning.
       Ball Lightning       Blue     Common     Attack          1                             []                             []                             [] Deal [7|10] damage. #Channel 1 #Lightning.
              Barrage       Blue     Common     Attack          1                             []                             []                             [] Deal [4|6] damage for each #Channeled Orb.
-           Beam Cell       Blue     Common     Attack          0                             []                             []                             [] Deal [3|4] damage.\nApply [1|2] #Vulnerable.
+           Beam Cell       Blue     Common     Attack          0                             []                 ['Vulnerable']                             [] Deal [3|4] damage.\nApply [1|2] #Vulnerable.
       Charge Battery       Blue     Common      Skill          1                             []                             []                             [] Gain [7|10] #Block.\nNext turn, gain <B>.
                 Claw       Blue     Common     Attack          0                             []                             []                             [] Deal [3|5] damage.\nIncrease the damage of ALL Claw cards by 2 this combat.
            Cold Snap       Blue     Common     Attack          1                             []                             []                             [] Deal [6|9] damage. #Channel 1 #Frost.
       Compile Driver       Blue     Common     Attack          1                             []                             []                             [] Deal [7|10] damage.\nDraw 1 card for each unique Orb you have.
           Coolheaded       Blue     Common      Skill          1                             []                             []                             [] #Channel 1 #Frost.\nDraw [1|2] [card|cards].
-     Go for the Eyes       Blue     Common     Attack          0                             []                             []                             [] Deal [3|4] damage.\nIf the enemy intends to attack, apply [1|2] #Weak.
+     Go for the Eyes       Blue     Common     Attack          0                             []                     ['Weaken']                             [] Deal [3|4] damage.\nIf the enemy intends to attack, apply [1|2] #Weak.
             Hologram       Blue     Common      Skill          1                    ['Exhaust']                             []                             [] Gain [3|5] #Block.\nPut a card from your discard pile into your hand. [\n#Exhaust.|
                 Leap       Blue     Common      Skill          1                             []                             []                             []            Gain [9|12] #Block.
              Rebound       Blue     Common     Attack          1                             []                             []                             [] Deal [9|12] damage.\nPut the next card you play this turn on top of your draw pile.
@@ -297,7 +297,7 @@
         Bowling Bash     Purple     Common     Attack          1                             []                             []                             [] Deal [7|10] damage for each enemy in combat.
           Consecrate     Purple     Common     Attack          0                             []                             []                             [] Deal [5|8] damage to ALL enemies.
            Crescendo     Purple     Common      Skill          1          ['Exhaust', 'Retain']                             []                             [] #Retain. Enter #Wrath. #Exhaust.
-        Crush Joints     Purple     Common     Attack          1                             []                             []                             [] Deal [8|10] damage. If the previous card played was a Skill, apply [1|2] #Vulnerable.
+        Crush Joints     Purple     Common     Attack          1                             []                 ['Vulnerable']                             [] Deal [8|10] damage. If the previous card played was a Skill, apply [1|2] #Vulnerable.
     Cut Through Fate     Purple     Common     Attack          1                             []                             []                             [] Deal [7|9] damage. #Scry [2|3]. Draw 1 card.
           Empty Body     Purple     Common      Skill          1                             []                             []                             [] Gain [7|10] #Block. Exit your #Stance.
           Empty Fist     Purple     Common     Attack          1                             []                             []                             [] Deal [9|14] damage. Exit your #Stance.
@@ -310,7 +310,7 @@
      Pressure Points     Purple     Common      Skill          1                             []                             []                             [] Apply [8|11] Mark. ALL enemies lose HP equal to their Mark.
            Prostrate     Purple     Common      Skill          0                             []                             []                             [] Gain [2|3] #Mantra. Gain 4 #Block.
              Protect     Purple     Common      Skill          2                     ['Retain']                             []                             []  #Retain. Gain [12|16] #Block.
-           Sash Whip     Purple     Common     Attack          1                             []                             []                             [] Deal [8|10] damage. If the last card played this combat was an Attack, apply [1|2] #Weak.
+           Sash Whip     Purple     Common     Attack          1                             []                     ['Weaken']                             [] Deal [8|10] damage. If the last card played this combat was an Attack, apply [1|2] #Weak.
            Third Eye     Purple     Common      Skill          1                             []                             []                             [] Gain [7|9] #Block. #Scry [3|5].
          Tranquility     Purple     Common      Skill          1          ['Exhaust', 'Retain']                             []                             [] #Retain. Enter #Calm. #Exhaust.
          Battle Hymn     Purple   Uncommon      Power          1                     ['Innate']                             []                             [] |#Innate. ]At the start of each turn add a #Smite into your hand.
@@ -323,7 +323,7 @@
         Fear No Evil     Purple   Uncommon     Attack          1                             []                             []                             [] Deal [8|11] damage. If the enemy intends to Attack, enter #Calm.
    Foreign Influence     Purple   Uncommon      Skill          0                    ['Exhaust']                             []                             [] Choose 1 of 3 Attacks of any color to add to your hand. |It costs 0 this turn.] #Exhaust.
            Foresight     Purple   Uncommon      Power          1                             []                             []                             [] At the start of your turn, #Scry [3|4].
-         Indignation     Purple   Uncommon      Skill          1                             []                             []                             [] If you are in #Wrath, apply [3|5] #Vulnerable to ALL enemies, otherwise enter #Wrath.
+         Indignation     Purple   Uncommon      Skill          1                             []                 ['Vulnerable']                             [] If you are in #Wrath, apply [3|5] #Vulnerable to ALL enemies, otherwise enter #Wrath.
          Inner Peace     Purple   Uncommon      Skill          1                             []                             []                             [] If you are in #Calm, draw [3|4] cards, otherwise Enter #Calm.
           Like Water     Purple   Uncommon      Power          1                             []                             []                             [] At the end of your turn, if you are in #Calm, gain [5|7] #Block.
             Meditate     Purple   Uncommon      Skill          1                     ['Retain']                             []                             [] Put [1 card|2 cards] from your discard pile into your hand and #Retain [it|them]. Enter #Calm. End your turn.
@@ -342,7 +342,7 @@
     Talk to the Hand     Purple   Uncommon     Attack          1                    ['Exhaust']                             []                             [] Deal [5|7] damage. Whenever you attack this enemy, gain [2|3] #Block. #Exhaust.
              Tantrum     Purple   Uncommon     Attack          1                             []                             []                             [] Deal 3 damage [3|4] times. Enter #Wrath. Shuffle this card into your draw pile.
               Wallop     Purple   Uncommon     Attack          2                             []                             []                             [] Deal [9|12] damage. Gain #Block equal to unblocked damage dealt.
-    Wave of the Hand     Purple   Uncommon      Skill          1                             []                             []                             [] Whenever you gain #Block this turn, apply [1|2] #Weak to ALL enemies.
+    Wave of the Hand     Purple   Uncommon      Skill          1                             []                     ['Weaken']                             [] Whenever you gain #Block this turn, apply [1|2] #Weak to ALL enemies.
                Weave     Purple   Uncommon     Attack          0                             []                             []                             [] Deal [4|6] damage. Whenever you #Scry, return this from the discard pile to your hand.
           Wheel Kick     Purple   Uncommon     Attack          2                             []                             []                             [] Deal [15|20] damage. Draw 2 cards.
      Windmill Strike     Purple   Uncommon     Attack          2                     ['Retain']                             []                             [] #Retain. Deal [7|10] damage. Whenever this card is #Retained, increase its damage by [4|5].

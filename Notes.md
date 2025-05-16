@@ -41,6 +41,10 @@ Cards that interact with retain: Perseverance, Sands of Time, Windmill, Establis
 **Buffs**: Intangible <br>
 **Effect**: <br>
 
+### Ver 2
+\+ **Debuffs**: Minus Strength, Minus Dexterity <br>
+\+ **Buffs**: Plus Strength, Plus Dexterity, Plated Armor <br>
+
 ### Goal
 *We would like to make an additional entry for every single upgraded card* <br>
 **id**: Unique identifier (arbitrarily labelled) <br>

@@ -50,10 +50,12 @@ for line in f.readlines():
         if re.search(r'Ethereal.', text): cardTraits.append("Ethereal")
         if re.search(r'Unplayable.', text): cardTraits.append("Unplayable")
         if re.search(r'Retain.', text): cardTraits.append("Retain")
-        # if re.search(r'Weaken', text): debuffs.append("Weaken")
-        # if re.search(r'Frail', text): debuffs.append("Frail")
-        # if re.search(r'Vulnerable', text): debuffs.append("Vulnerable")
-        # if re.search(r'Intangible', text): buffs.append("Intangible")
+        if re.search(r'(apply|gain) (\[.\|.{1,3}\]|\d+|X) #weak', text, re.IGNORECASE) or re.search(r'(apply|gain) (\[.\|.{1,3}\]|\d+|X) #\S* and (\[.\|.{1,3}\] |\d+ |X |)#weak', text, re.IGNORECASE): 
+            debuffs.append("Weaken")
+        if re.search(r'(apply|gain) (\[.\|.{1,3}\]|\d+|X) #vulnerable', text, re.IGNORECASE) or re.search(r'(apply|gain) (\[.\|.{1,3}\]|\d+|X) #\S* and (\[.\|.{1,3}\] |\d+ |X |)#vulnerable', text, re.IGNORECASE): 
+            debuffs.append("Vulnerable")
+        if re.search(r'gain \d #frail', text, re.IGNORECASE): debuffs.append("Frail")
+        if re.search(r'(apply|gain) (\[.\|.{1,3}\]|\d+|X) #intangible', text, re.IGNORECASE): buffs.append("Intangible")
         entry.append(cardTraits)
         entry.append(debuffs)
         entry.append(buffs)
@@ -61,26 +63,12 @@ for line in f.readlines():
 f.close()
 
 df = pd.DataFrame(data, columns=["Name", "Color", "Rarity", "Type", "Cost", "Text", "Card Traits", "Debuffs", "Buffs"])
-df = df[["Name", "Color", "Rarity", "Type", "Cost", "Card Traits", "Debuffs", "Buffs", "Text"]]
-# print(max(df["Name"], key=len))
-
-
-# Assign Card Traits
-
-
-# Assign Debuffs
-
-# Assign Buffs
-
+df = df[["Name", "Color", "Rarity", "Type", "Cost", "Card Traits", "Debuffs", "Buffs", "Text"]] # Move Text column to the end for readability when exported to .txt
 
 # print(df)
 # print(df["Name"].tolist())
-# print(df.loc[df["Cost"] == "X"]["Name"].tolist())\
-
-
+# print(df.loc[df["Cost"] == "X"]["Name"].tolist())
 
 # Export DataFrame
-# np.savetxt("CardAttributes.txt", df.values, fmt=('%20s | %10s | %10s | %10s | %10s | %30s | %30s | %30s | %30s'))
-# np.savetxt("CardAttributes.txt", np.concatenate((df.index, df.values), axis=2), fmt=('%20s %10s %10s %10s %10s %30s %30s %30s %30s'))
 np.savetxt("CardAttributes.txt", df.values, fmt=('%20s %10s %10s %10s %10s %30s %30s %30s %30s'))
 df.to_csv("CardAttributes.csv",index=False)
