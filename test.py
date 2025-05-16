@@ -1,2 +1,5 @@
 import numpy as np
-print(np.empty(2))
+import pandas as pd
+
+df = pd.read_csv("CardAttributes.csv", header=0)
+print(df.values)

@@ -61,6 +61,9 @@ for line in f.readlines():
 f.close()
 
 df = pd.DataFrame(data, columns=["Name", "Color", "Rarity", "Type", "Cost", "Text", "Card Traits", "Debuffs", "Buffs"])
+df = df[["Name", "Color", "Rarity", "Type", "Cost", "Card Traits", "Debuffs", "Buffs", "Text"]]
+# print(max(df["Name"], key=len))
+
 
 # Assign Card Traits
 
@@ -70,6 +73,14 @@ df = pd.DataFrame(data, columns=["Name", "Color", "Rarity", "Type", "Cost", "Tex
 # Assign Buffs
 
 
-print(df)
+# print(df)
 # print(df["Name"].tolist())
-# print(df.loc[df["Cost"] == "X"]["Name"].tolist())
+# print(df.loc[df["Cost"] == "X"]["Name"].tolist())\
+
+
+
+# Export DataFrame
+# np.savetxt("CardAttributes.txt", df.values, fmt=('%20s | %10s | %10s | %10s | %10s | %30s | %30s | %30s | %30s'))
+# np.savetxt("CardAttributes.txt", np.concatenate((df.index, df.values), axis=2), fmt=('%20s %10s %10s %10s %10s %30s %30s %30s %30s'))
+np.savetxt("CardAttributes.txt", df.values, fmt=('%20s %10s %10s %10s %10s %30s %30s %30s %30s'))
+df.to_csv("CardAttributes.csv",index=False)
