@@ -207,7 +207,7 @@
             Parasite      Curse      Curse      Curse Unplayable                 ['Unplayable']                             []                             [] #Unplayable.\nIf transformed or removed from your deck, lose 3 Max HP.
                Pride      Curse      Curse      Curse          1          ['Innate', 'Exhaust']                             []                             [] #Innate.\nAt the end of your turn, put a copy of this card on top of your draw pile.\n#Exhaust.
               Regret      Curse      Curse      Curse Unplayable                 ['Unplayable']                             []                             [] #Unplayable.\nAt the end of your turn, lose 1 HP for each card in your hand.
-               Shame      Curse      Curse      Curse Unplayable                 ['Unplayable']                             []                             [] #Unplayable.\n#At the end of your turn, gain 1 Frail.
+               Shame      Curse      Curse      Curse Unplayable                 ['Unplayable']                      ['Frail']                             [] #Unplayable.\n#At the end of your turn, gain 1 #Frail.
               Writhe      Curse      Curse      Curse Unplayable       ['Innate', 'Unplayable']                             []                             []         #Unplayable.\n#Innate.
      Ascender's Bane      Curse      Curse      Curse Unplayable                 ['Unplayable']                             []                             []                   #Unplayable.
                 Burn  Colorless     Common     Status Unplayable                 ['Unplayable']                             []                             [] #Unplayable.\nAt the end of your turn, take [2|4] damage.
