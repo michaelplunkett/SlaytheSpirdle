@@ -9,13 +9,13 @@ maxIter = 10
 df = pd.read_csv("CardAttributes.csv", header=0, converters={"Card Traits":literal_eval, "Debuffs":literal_eval, "Buffs":literal_eval})
 cardIDDict = dict(np.column_stack((df["Name"], df.index)))
 
-# solnCardID = randrange(len(df.index))
-solnCardID = 73 # Backstab
+solnCardID = randrange(len(df.index))
+# solnCardID = 73 # Backstab
 solnCard = df.iloc[solnCardID]
 
 print("Slay the Spirdle, V1")
-print("Card picked:")
-print(solnCard)
+# print("Card picked:")
+# print(solnCard)
 print()
 print("Guess a card: ")
 
@@ -33,7 +33,7 @@ while not win:
         print("That is not a card. Please try again.")
         continue
     userCard = df.iloc[cardIDDict[userGuess]]
-    print("You guessed: \n", userCard, "\n")
+    # print("You guessed: \n", userCard, "\n")
     if userGuess == solnCard["Name"]:
         win = True
         print("You won!")
@@ -98,24 +98,26 @@ while not win:
     else: buffMatch = 0
 
     # Print results 
-    print("Color:\t\t Correct")  if colorMatch  else print("Color:\t\t Incorrect")
-    print("Rarity:\t\t Correct") if rarityMatch else print("Rarity:\t\t Incorrect")
-    print("Type:\t\t Correct")   if typeMatch   else print("Type:\t\t Incorrect")
-    print("Cost:\t\t Correct")   if costMatch   else print("Cost:\t\t Incorrect")
+    print("Color:\t\t Correct \t", userCard["Color"])  if colorMatch  else print("Color:\t\t Incorrect \t", userCard["Color"])
+    print("Rarity:\t\t Correct \t", userCard["Rarity"]) if rarityMatch else print("Rarity:\t\t Incorrect \t", userCard["Rarity"])
+    print("Type:\t\t Correct \t", userCard["Type"])   if typeMatch   else print("Type:\t\t Incorrect \t", userCard["Type"])
+    print("Cost:\t\t Correct \t", userCard["Cost"])   if costMatch   else print("Cost:\t\t Incorrect \t", userCard["Cost"])
     match traitMatch:
-        case 0: print("Card Traits:\t Incorrect")
-        case 1: print("Card Traits:\t Partially correct")
-        case 2: print("Card Traits:\t Correct")
+        case 0: print("Card Traits:\t Incorrect \t", userCard["Card Traits"])
+        case 1: print("Card Traits:\t Partially correct \t", userCard["Card Traits"])
+        case 2: print("Card Traits:\t Correct \t", userCard["Card Traits"])
     match debuffMatch:
-        case 0: print("Debuffs:\t Incorrect")
-        case 1: print("Debuffs:\t Partially correct")
-        case 2: print("Debuffs:\t Correct")
+        case 0: print("Debuffs:\t Incorrect \t", userCard["Debuffs"])
+        case 1: print("Debuffs:\t Partially correct \t", userCard["Debuffs"])
+        case 2: print("Debuffs:\t Correct \t", userCard["Debuffs"])
     match buffMatch:
-        case 0: print("Buffs:\t\t Incorrect")
-        case 1: print("Buffs:\t\t Partially correct")
-        case 2: print("Buffs:\t\t Correct")
+        case 0: print("Buffs:\t\t Incorrect \t", userCard["Buffs"])
+        case 1: print("Buffs:\t\t Partially correct \t", userCard["Buffs"])
+        case 2: print("Buffs:\t\t Correct \t", userCard["Buffs"])
     print()
 
     iterCount = iterCount + 1
-    print("Incorrect, try again.", maxIter - iterCount, "guesses left.")
-    if iterCount >= maxIter: break
+    print("Incorrect, try again.", maxIter - iterCount, "guesses left.\n")
+    if iterCount >= maxIter: 
+        print("Ran out of guesses. Correct answer was:\n", solnCard)
+        break

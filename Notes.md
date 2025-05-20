@@ -11,6 +11,7 @@ Long term:
 
 Problems:
 - There are multiple copies of strike and defend
+- Sever Soul is getting labelled with 'Exhaust'
 
 # Notes
 Cards which exhaust other cards: Havoc, True Grit, Burning Pact, Second Wind, Sever Soul, Corruption, Fire Fiend, Omniscience
