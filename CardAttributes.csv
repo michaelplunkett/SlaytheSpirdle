@@ -102,7 +102,7 @@ Setup,Green,Uncommon,Skill,1,[],[],[],Put a card from your hand on top of your d
 Skewer,Green,Uncommon,Attack,X,[],[],[],Deal [7|10] damage X times.
 Tactician,Green,Uncommon,Skill,Unplayable,['Unplayable'],[],[],"#Unplayable.\nIf this card is discarded from your hand, gain <G>| <G>]."
 Terror,Green,Uncommon,Skill,1,['Exhaust'],['Vulnerable'],[],Apply 99 #Vulnerable.\n#Exhaust.
-Well-Laid Plans,Green,Uncommon,Power,1,['Retain'],[],[],"At the end of your turn, #Retain up to [1|2] [card|cards]."
+Well-Laid Plans,Green,Uncommon,Power,1,[],[],[],"At the end of your turn, #Retain up to [1|2] [card|cards]."
 A Thousand Cuts,Green,Rare,Power,2,[],[],[],"Whenever you play a card, deal [1|2] damage to ALL enemies."
 Adrenaline,Green,Rare,Skill,0,['Exhaust'],[],[],Gain <G>| <G>].\nDraw 2 cards.\n#Exhaust.
 After Image,Green,Rare,Power,1,['Innate'],[],[],"|#Innate.] \nWhenever you play a card, gain 1 #Block."
@@ -132,7 +132,7 @@ Clash,Red,Common,Attack,0,[],[],[],Can only be played if every card in your hand
 Cleave,Red,Common,Attack,1,[],[],[],Deal [8|11] damage to ALL enemies.
 Clothesline,Red,Common,Attack,2,[],['Weaken'],[],Deal [12|14] damage.\nApply [2|3] #Weak.
 Flex,Red,Common,Skill,0,[],[],[],"Gain [2|4] #Strength.\nAt the end of this turn, lose [2|4] #Strength."
-Havoc,Red,Common,Skill,1,['Exhaust'],[],[],Play the top card of your draw pile and #Exhaust it.
+Havoc,Red,Common,Skill,1,[],[],[],Play the top card of your draw pile and #Exhaust it.
 Headbutt,Red,Common,Attack,1,[],[],[],Deal [9|12] damage.\nPut a card from your discard pile on top of your draw pile.
 Heavy Blade,Red,Common,Attack,2,[],[],[],Deal 14 damage.\n#Strength affects this card [3|5] times.
 Iron Wave,Red,Common,Attack,1,[],[],[],Gain [5|7] #Block.\nDeal [5|7] damage.
@@ -141,23 +141,23 @@ Pommel Strike,Red,Common,Attack,1,[],[],[],Deal [9|10] damage.\nDraw [1|2] [card
 Shrug It Off,Red,Common,Skill,1,[],[],[],Gain [8|11] #Block.\nDraw 1 card.
 Sword Boomerang,Red,Common,Attack,1,[],[],[],Deal 3 damage to a random enemy [3|4] times.
 Thunderclap,Red,Common,Attack,1,[],['Vulnerable'],[],Deal [4|7] damage and apply 1 #Vulnerable to ALL enemies.
-True Grit,Red,Common,Skill,1,['Exhaust'],[],[],Gain [7|9] #Block.\n#Exhaust a [random|] card in your hand.
+True Grit,Red,Common,Skill,1,[],[],[],Gain [7|9] #Block.\n#Exhaust a [random|] card in your hand.
 Twin Strike,Red,Common,Attack,1,[],[],[],Deal [5|7] damage twice.
 Warcry,Red,Common,Skill,0,['Exhaust'],[],[],Draw [1|2] [card|cards].\nPut a card from your hand onto the top of your draw pile.\n#Exhaust.
 Wild Strike,Red,Common,Attack,1,[],[],[],Deal [12|17] damage.\nShuffle a #Wound into your draw pile.
 Battle Trance,Red,Uncommon,Skill,0,[],[],[],Draw [3|4] cards.\nYou cannot draw additional cards this turn.
 Blood for Blood,Red,Uncommon,Attack,4,[],[],[],Costs 1 less <R>\nfor each time you lose HP this combat.\nDeal [18|22] damage.
 Bloodletting,Red,Uncommon,Skill,0,[],[],[],Lose 3 HP.\nGain <R> <R>| <R>].
-Burning Pact,Red,Uncommon,Skill,1,['Exhaust'],[],[],#Exhaust 1 card.\nDraw [2|3] cards.
+Burning Pact,Red,Uncommon,Skill,1,[],[],[],#Exhaust 1 card.\nDraw [2|3] cards.
 Carnage,Red,Uncommon,Attack,2,['Ethereal'],[],[],#Ethereal.\nDeal [20|28] damage.
 Combust,Red,Uncommon,Power,1,[],[],[],"At the end of your turn, lose 1 HP and deal [5|7] damage to ALL enemies."
-Dark Embrace,Red,Uncommon,Power,2,['Exhaust'],[],[],"Whenever a card is #Exhausted,\ndraw 1 card."
+Dark Embrace,Red,Uncommon,Power,2,[],[],[],"Whenever a card is #Exhausted,\ndraw 1 card."
 Disarm,Red,Uncommon,Skill,1,['Exhaust'],[],[],Enemy loses [2|3] #Strength.\n#Exhaust.
 Dropkick,Red,Uncommon,Attack,1,[],[],[],"Deal [5|8] damage.\nIf the enemy has #Vulnerable, gain <R> and draw 1 card."
 Dual Wield,Red,Uncommon,Skill,1,[],[],[],Choose an Attack or Power card. Add [a copy|2 copies] of that card into your hand.
 Entrench,Red,Uncommon,Skill,2,[],[],[],Double your #Block.
 Evolve,Red,Uncommon,Power,1,[],[],[],"Whenever you draw a #Status card, draw [1|2] [card|cards]."
-Feel No Pain,Red,Uncommon,Power,1,['Exhaust'],[],[],"Whenever a card is #Exhausted,\ngain [3|4] #Block."
+Feel No Pain,Red,Uncommon,Power,1,[],[],[],"Whenever a card is #Exhausted,\ngain [3|4] #Block."
 Fire Breathing,Red,Uncommon,Power,1,[],[],[],"Whenever you draw a #Status or #Curse card, deal [6|10] damage to ALL enemies."
 Flame Barrier,Red,Uncommon,Skill,2,[],[],[],"Gain [12|16] #Block.\nWhenever you are attacked this turn, deal [4|6] damage back."
 Ghostly Armor,Red,Uncommon,Skill,1,['Ethereal'],[],[],#Ethereal.\nGain [10|13] #Block.
@@ -173,10 +173,10 @@ Rampage,Red,Uncommon,Attack,1,[],[],[],Deal 8 damage.\nIncrease this card\'s dam
 Reckless Charge,Red,Uncommon,Attack,0,[],[],[],Deal [7|10] damage.\nShuffle a [[Dazed]] into your draw pile.
 Rupture,Red,Uncommon,Power,1,[],[],[],"Whenever you lose HP from a card,\ngain [1|2] #Strength."
 Searing Blow,Red,Uncommon,Attack,2,[],[],[],Deal [12|16] damage.\nCan be #Upgraded any number of times.
-Second Wind,Red,Uncommon,Skill,1,['Exhaust'],[],[],#Exhaust all non-Attack cards in your hand. Gain [5|7] #Block for each card #Exhausted.
+Second Wind,Red,Uncommon,Skill,1,[],[],[],#Exhaust all non-Attack cards in your hand. Gain [5|7] #Block for each card #Exhausted.
 Seeing Red,Red,Uncommon,Skill,1,['Exhaust'],[],[],Gain <R> <R>.\n#Exhaust.
-Sentinel,Red,Uncommon,Skill,1,['Exhaust'],[],[],"Gain [5|8] #Block.\nIf this card is #Exhausted,\ngain <R> <R>| <R>]."
-Sever Soul,Red,Uncommon,Attack,2,['Exhaust'],[],[],#Exhaust all non-Attack cards in your hand.\nDeal [16|22] damage.
+Sentinel,Red,Uncommon,Skill,1,[],[],[],"Gain [5|8] #Block.\nIf this card is #Exhausted,\ngain <R> <R>| <R>]."
+Sever Soul,Red,Uncommon,Attack,2,[],[],[],#Exhaust all non-Attack cards in your hand.\nDeal [16|22] damage.
 Shockwave,Red,Uncommon,Skill,2,['Exhaust'],"['Weaken', 'Vulnerable']",[],Apply [3|5] #Weak and #Vulnerable to ALL enemies.\n#Exhaust.
 Spot Weakness,Red,Uncommon,Skill,1,[],[],[],"If the enemy intends to attack, gain [3|4] #Strength."
 Uppercut,Red,Uncommon,Attack,2,[],"['Weaken', 'Vulnerable']",[],Deal 13 damage.\nApply [1|2] #Weak.\nApply [1|2] #Vulnerable.
@@ -185,7 +185,7 @@ Barricade,Red,Rare,Power,3,[],[],[],#Block is not removed at the start of your t
 Berserk,Red,Rare,Power,0,[],['Vulnerable'],[],"Gain [2|1] #Vulnerable.\nAt the start of your turn, gain <R>."
 Bludgeon,Red,Rare,Attack,3,[],[],[],Deal [32|42] damage.
 Brutality,Red,Rare,Power,0,['Innate'],[],[],"|#Innate.] \nAt the start of your turn, lose 1 HP and draw 1 card."
-Corruption,Red,Rare,Power,3,['Exhaust'],[],[],"Skills cost 0.\nWhenever you play a Skill, #Exhaust it."
+Corruption,Red,Rare,Power,3,[],[],[],"Skills cost 0.\nWhenever you play a Skill, #Exhaust it."
 Demon Form,Red,Rare,Power,3,[],[],[],"At the start of your turn, gain [2|3] #Strength."
 Double Tap,Red,Rare,Skill,1,[],[],[],"This turn, your next [Attack is|[1|2] Attacks are] played twice."
 Exhume,Red,Rare,Skill,1,['Exhaust'],[],[],Put a card from your #Exhaust pile into your hand.\n#Exhaust.
@@ -251,7 +251,7 @@ Darkness,Blue,Uncommon,Skill,1,[],[],[],#Channel 1 #Dark.|\nTrigger the passive 
 Defragment,Blue,Uncommon,Power,1,[],[],[],Gain [1|2] #Focus.
 Doom and Gloom,Blue,Uncommon,Attack,2,[],[],[],Deal [10|14] damage to ALL enemies.\n#Channel 1 #Dark.
 Double Energy,Blue,Uncommon,Skill,1,['Exhaust'],[],[],Double your #Energy.\n#Exhaust.
-Equilibrium,Blue,Uncommon,Skill,2,['Retain'],[],[],Gain [13|16] #Block.\n#Retain your hand this turn.
+Equilibrium,Blue,Uncommon,Skill,2,[],[],[],Gain [13|16] #Block.\n#Retain your hand this turn.
 FTL,Blue,Uncommon,Attack,0,[],[],[],"Deal [5|6] damage. If you have played less than [3|4] cards this turn, draw 1 card."
 Force Field,Blue,Uncommon,Skill,4,[],[],[],Costs 1 less <B> for each Power card played this combat.\nGain [12|16] #Block.
 Fusion,Blue,Uncommon,Skill,2,[],[],[],#Channel 1 #Plasma.
@@ -262,7 +262,7 @@ Hello World,Blue,Uncommon,Power,1,['Innate'],[],[],"|#Innate.] \nAt the start of
 Loop,Blue,Uncommon,Power,1,[],[],[],"At the start of your turn, trigger the passive ability of your next Orb| [1|2] times]."
 Melter,Blue,Uncommon,Attack,1,[],[],[],Remove all #Block from the enemy.\nDeal [10|14] damage.
 Overclock,Blue,Uncommon,Skill,0,[],[],[],Draw [2|3] cards.\nAdd a #Burn into your discard pile.
-Recycle,Blue,Uncommon,Skill,1,['Exhaust'],[],[],#Exhaust a card.\nGain <B> equal to its cost.
+Recycle,Blue,Uncommon,Skill,1,[],[],[],#Exhaust a card.\nGain <B> equal to its cost.
 Reinforced Body,Blue,Uncommon,Skill,X,[],[],[],Gain [7|9] #Block X times.
 Reprogram,Blue,Uncommon,Skill,1,[],[],[],Lose [1|2] focus. Gain [1|2] Strength. Gain [1|2] Dexterity.
 Rip and Tear,Blue,Uncommon,Attack,1,[],[],[],Deal [7|9] damage to a random enemy twice.
@@ -327,7 +327,7 @@ Foresight,Purple,Uncommon,Power,1,[],[],[],"At the start of your turn, #Scry [3|
 Indignation,Purple,Uncommon,Skill,1,[],['Vulnerable'],[],"If you are in #Wrath, apply [3|5] #Vulnerable to ALL enemies, otherwise enter #Wrath."
 Inner Peace,Purple,Uncommon,Skill,1,[],[],[],"If you are in #Calm, draw [3|4] cards, otherwise Enter #Calm."
 Like Water,Purple,Uncommon,Power,1,[],[],[],"At the end of your turn, if you are in #Calm, gain [5|7] #Block."
-Meditate,Purple,Uncommon,Skill,1,['Retain'],[],[],Put [1 card|2 cards] from your discard pile into your hand and #Retain [it|them]. Enter #Calm. End your turn.
+Meditate,Purple,Uncommon,Skill,1,[],[],[],Put [1 card|2 cards] from your discard pile into your hand and #Retain [it|them]. Enter #Calm. End your turn.
 Mental Fortress,Purple,Uncommon,Power,1,[],[],[],"Whenever you switch #Stances, gain [4|6] #Block."
 Nirvana,Purple,Uncommon,Power,1,[],[],[],"Whenever you #Scry, gain [3|4] #Block."
 Perseverance,Purple,Uncommon,Skill,1,['Retain'],[],[],"#Retain. Gain [5|7] #Block. Whenever this card is #Retained, increase its #Block by [2|3]."
@@ -356,7 +356,7 @@ Conjure Blade,Purple,Rare,Skill,X,['Exhaust'],[],[],Shuffle an #Expunger| with X
 Deus Ex Machina,Purple,Rare,Skill,Unplayable,"['Exhaust', 'Unplayable']",[],[],"#Unplayable. When you draw this card, add [2|3] #Miracles into your hand. #Exhaust."
 Deva Form,Purple,Rare,Power,3,['Ethereal'],[],[],"[#Ethereal. |At the start of your turn, gain <P> and increase this gain by 1."
 Devotion,Purple,Rare,Power,1,[],[],[],"At the start of your turn, gain [2|3] #Mantra."
-Establishment,Purple,Rare,Power,1,"['Innate', 'Retain']",[],[],"|#Innate. ]Whenever a card is #Retained, lower its cost by 1."
+Establishment,Purple,Rare,Power,1,['Innate'],[],[],"|#Innate. ]Whenever a card is #Retained, lower its cost by 1."
 Judgment,Purple,Rare,Skill,1,[],[],[],"If the enemy had [30|40] or less HP, set their HP to 0."
 Lesson Learned,Purple,Rare,Attack,2,['Exhaust'],[],[],"Deal [10|13] damage. If #Fatal, #Upgrade a random card in your deck. #Exhaust."
 Master Reality,Purple,Rare,Power,1,[],[],[],"Whenever a card is created during combat, #Upgrade it."

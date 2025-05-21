@@ -1,17 +1,19 @@
 # To do
 Short term:
-- Verify information in CardData (Ascenders Bane should have special rarity )
+- Verify information in CardData (Ascenders Bane should have special rarity)
 - identify cards which
   - give strength or dex as a buff
   - subtract strength or dex as a debuff
-- Create interactive script in terminal to play SlaytheSpirdle
+- Implement Card Effects:
+  - Parse for Damage, Block, Poison, Orbs, other common effects
+  - Create csv specifying unique card effects for each card 
+- Aggregate Strikes and Defends
 
 Long term:
-- Make additional entry for every single upgraded card 
+- Separate upgraded and unupgraded cards 
 
 Problems:
 - There are multiple copies of strike and defend
-- Sever Soul is getting labelled with 'Exhaust'
 
 # Notes
 Cards which exhaust other cards: Havoc, True Grit, Burning Pact, Second Wind, Sever Soul, Corruption, Fire Fiend, Omniscience

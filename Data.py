@@ -45,11 +45,11 @@ for line in f.readlines():
         cardTraits = []
         debuffs = []
         buffs = []
-        if re.search(r'Innate.', text): cardTraits.append("Innate")
-        if re.search(r'Exhaust.', text): cardTraits.append("Exhaust") # Problem: Sever Soul is here??? Why does it ignore the '.'
-        if re.search(r'Ethereal.', text): cardTraits.append("Ethereal")
-        if re.search(r'Unplayable.', text): cardTraits.append("Unplayable")
-        if re.search(r'Retain.', text): cardTraits.append("Retain")
+        if re.search(r'Innate\.', text): cardTraits.append("Innate")
+        if re.search(r'Exhaust\.', text): cardTraits.append("Exhaust")
+        if re.search(r'Ethereal\.', text): cardTraits.append("Ethereal")
+        if re.search(r'Unplayable\.', text): cardTraits.append("Unplayable")
+        if re.search(r'Retain\.', text): cardTraits.append("Retain")
         if re.search(r'(apply|gain) (\[.\|.{1,3}\]|\d+|X) #weak', text, re.IGNORECASE) or re.search(r'(apply|gain) (\[.\|.{1,3}\]|\d+|X) #\S* and (\[.\|.{1,3}\] |\d+ |X |)#weak', text, re.IGNORECASE): 
             debuffs.append("Weaken")
         if re.search(r'(apply|gain) (\[.\|.{1,3}\]|\d+|X) #vulnerable', text, re.IGNORECASE) or re.search(r'(apply|gain) (\[.\|.{1,3}\]|\d+|X) #\S* and (\[.\|.{1,3}\] |\d+ |X |)#vulnerable', text, re.IGNORECASE): 
